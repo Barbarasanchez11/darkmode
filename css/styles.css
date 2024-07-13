@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*mis css*/
+
+.headertop {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.headertop span {
+    font-size: 30px;
+}
+
+.main article {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.main p{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.darkmode {
+    display:flex;
+    margin-left: 920px;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.slice {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    padding: 0 5px;
+    border-radius: 50px;
+    background-color: rgb(220, 210, 210);
+    cursor: pointer;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(243, 243, 95);
+    border: 2px solid  rgb(243, 243, 95);
+    border-radius: 50%;
+    background-image: url("../assets/img/sol.png");
+    background-size: contain;
+    transition: all .5 ease-in;
+}
+.nigth {
+    transform: translate(45px);
+    border: 2px solid rgb(86, 86, 250);
+    background-color: rgb(86, 86, 250);
+    background-image: url("../assets/img/luna.png");
+}
+
+.dark {
+    background-color: black;
+}
+.dark h1, .dark .headertop span {
+    color:yellow
+}
+
+.dark p{
+    color: white;
+}
+.novisible{
+    display:none;
+}
+.text {
+    height: 18px;
+    overflow: hidden;
+}
+
+.texttransition {
+    transition: all .5 linear;
+}
+
+.movetext {
+    margin-bottom: 15px;
+}
